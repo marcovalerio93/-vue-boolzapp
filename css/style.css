@@ -8,6 +8,8 @@
 
 body{ 
     font-family: sans-serif;
+    overflow-y: hidden;
+
 }
 
 .b-g{
@@ -15,7 +17,7 @@ body{
     height: 100%;
     background-color: #dbdbd2;
     border-top: solid 200px #009688;
-    z-index: -1;
+    z-index:0;
 }
 
 .container{
@@ -29,35 +31,145 @@ body{
 }
 
 .c-left{
-    width: 25%;
-    background-color: aquamarine;
-    border-right: solid 1px #d6d6d6;
+    width: 35%;
+    background-color: #fff;
 }
 
 .c-rigth{
-    width: 75%;
-    background-color: cornflowerblue;
+    width: 65%;
+    border-left: solid 1px #d6d6d6;
 }
 
 .header{
-    height: 70px;
+    height: 60px;
     background-color: #eaeaea;
     display: flex;
+    justify-content: space-between;
+    
 }
+/* container sinistro */
+.pofile{
+    display: flex;
+    vertical-align: middle;
+}
+img.jpg{
+    border-radius: 50%;
+    width: 60px;
+    height: auto;
+    padding: 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+span.user-name{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.settings{
+    margin-top: 20px;
+    display: inline-block;
+   
+}
+
+.settings, i{
+    margin-right: 5px;
+    color: #b1b1b1;
+}
+
+
 
 .alert{
     height: 100px;
-    background-color: lightskyblue;
+    background-color:#8edafc;
+    display: flex;
 }
+
+.icon-bell{
+    margin: 20px 20px 0px 20px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+    
+
+
 .search-bar{
     height: 50px ;
     background-color: #eaeaea;
+    display: flex;
+    padding: 7px;
 }
+
+.btn-search{
+    width: 80px;
+    height: 36px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+    background-color: #fff;
+    border: none ;
+    border-right: solid 1px #eaeaea;
+}
+
+
+input.search{
+    border: none;
+    flex-grow: 1;
+}
+
 .chat-bar{
-    height: calc(100% vh - 220px);
+    height: calc(100% - 210px);
     overflow-y: scroll;
 }
 
-.accounts{
-    height: 100px;
+.contacts{
+    
+    height: 80px;
+    border-bottom: solid 1px #f5f5f5;
+    margin: 10px ;
+    display: flex;
+    
+    
+    
+    
+}
+.avatar{
+    float: left;
+    border-radius: 50%;
+    width: 70px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.contats-name{
+    color:  #000;
+    font-size: large;
+   
+
+}
+.last-message{
+    color: #b6b9bb ;
+
+}
+span.time{ 
+    float: right;
+}
+
+
+/* container di destra */
+.chat{
+    height: calc(100% - 130px);
+    overflow-y: scroll;
+    background-image: url(../img/mine.jpg);
+    background-repeat: repeat;
+  
+}
+.footer{
+    height: 70px;
+    background-color: #f3eeea;
 }
